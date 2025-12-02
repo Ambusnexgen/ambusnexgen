@@ -1,8 +1,12 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
 
 const App: React.FC = () => {
   return (
-    <div className='flex items-center justify-center h-screen text-3xl font-extrabold'>Ambusnexgen</div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
   )
 }
 
