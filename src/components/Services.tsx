@@ -35,7 +35,7 @@ const Services: React.FC = () => {
                 {/* Descriptive Text */}
                 <div className='max-w-4xl mx-auto'>
                     <p className='text-black text-lg md:text-xl leading-relaxed font-semibold'>
-                        Ambus NexGen delivers end-to-end digital, creative, and business solutions under one roof. <br />
+                        AmbusNexGen delivers end-to-end digital, creative, and business solutions under one roof. <br />
                         From technology to AI, design to marketing — we bring your ideas to life.
                     </p>
                 </div>
