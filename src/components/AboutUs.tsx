@@ -11,7 +11,7 @@ const AboutUs: React.FC = () => {
             </div>
 
             {/* Description Section */}
-            <p className='text-center font-semibold sm:px-20 px-2 text-gray-600 sm:text-lg'>Ambus NexGen isn’t just a company - it’s a vision of hope, growth, and transformation. We empower startups with strategy, students with skill, and companies with technology. From digital services to future-driven products, Ambus NexGen is the bridge between dreams and success - trusted by all, built for everyone.</p>
+            <p className='text-center font-semibold sm:px-20 px-2 text-gray-600 sm:text-lg'>AmbusNexGen isn’t just a company - it’s a vision of hope, growth, and transformation. We empower startups with strategy, students with skill, and companies with technology. From digital services to future-driven products, AmbusNexGen is the bridge between dreams and success - trusted by all, built for everyone.</p>
             
             {/* About Us Section */}
             <div className='sm:mt-16 mt-10 sm:space-y-8'>

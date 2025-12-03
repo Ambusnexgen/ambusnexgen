@@ -50,7 +50,7 @@ export const aboutData = [
         id: 1,
         title: 'Our Mission',
         image: missionImg,
-        description: 'Our mission is to deliver end-to-end solutions that support every level of growth - from individuals to enterprises. We bridge creativity, technology, and purpose to empower startups, educate students, uplift struggling talents, and guide companies toward success. At Ambus NexGen, we build not just services, but futures - with trust, excellence, and heart.',
+        description: 'Our mission is to deliver end-to-end solutions that support every level of growth - from individuals to enterprises. We bridge creativity, technology, and purpose to empower startups, educate students, uplift struggling talents, and guide companies toward success. At AmbusNexGen, we build not just services, but futures - with trust, excellence, and heart.',
         bgColor: 'bg-[#02385A]',
         textColor: 'text-white'
     },
@@ -58,7 +58,7 @@ export const aboutData = [
         id: 2,
         title: 'Our Vision',
         image: VisionImg,
-        description: 'To create a world where every dream - from a student’s idea to a company’s vision - finds the right guidance, growth, and technology to become reality. Ambus NexGen stands as a trusted partner for innovation, opportunity, and progress - empowering people and businesses to rise beyond limits.',
+        description: 'To create a world where every dream - from a student’s idea to a company’s vision - finds the right guidance, growth, and technology to become reality. AmbusNexGen stands as a trusted partner for innovation, opportunity, and progress - empowering people and businesses to rise beyond limits.',
         bgColor: 'bg-[#7BBDE8]',
         textColor: 'text-black'
     },
@@ -66,7 +66,7 @@ export const aboutData = [
         id: 3,
         title: 'Our Motive',
         image: motiveImg,
-        description: 'We believe success should belong to everyone. Many have dreams but lack direction, support, or opportunity - Ambus NexGen was built for them. Our motive is to be the guide, the builder, and the strength for those who strive for a better tomorrow. We stand for trust, growth, and togetherness - a family that lifts everyone.',
+        description: 'We believe success should belong to everyone. Many have dreams but lack direction, support, or opportunity - AmbusNexGen was built for them. Our motive is to be the guide, the builder, and the strength for those who strive for a better tomorrow. We stand for trust, growth, and togetherness - a family that lifts everyone.',
         bgColor: 'bg-[#02B4D8]',
         textColor: 'text-black'
     }

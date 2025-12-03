@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
                             {contactData.map((item) => (
                                 <li key={item.id} className='flex items-center gap-x-2'>
                                     {item.icon}
-                                    <a href={`${item.name === 'Email' ? 'mailto:' : item.name === 'Phone' ? 'tel:' : ''}`} className='text-gray-300 text-sm hover:text-white transition-colors'>{item.value}</a>
+                                    <a href={`${item.name === 'Email' ? 'mailto:' : item.name === 'Phone' ? 'tel:' : '#'}${item.value}`} className='text-gray-300 text-sm hover:text-white transition-colors'>{item.value}</a>
                                 </li>
                             ))}
                         </ul>
