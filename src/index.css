@@ -39,4 +39,21 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    .services-swiper .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background: rgba(255, 255, 255, 0.5);
+        opacity: 1;
+    }
+
+    .services-swiper .swiper-pagination-bullet-active {
+        background: rgba(255, 255, 255, 1);
+        width: 24px;
+        border-radius: 4px;
+    }
+
+    .services-swiper .swiper-pagination {
+        bottom: 10px !important;
+    }
 }

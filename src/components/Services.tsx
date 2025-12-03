@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import { servicesData } from '../utils/data'
 import { ChevronRight } from 'lucide-react'
 import ServiceBoxes from './ServiceBoxes'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 const Services: React.FC = () => {
     const [flippedCards, setFlippedCards] = useState<Set<number>>(new Set())
@@ -74,7 +79,7 @@ const Services: React.FC = () => {
                                     </div>
 
                                     {/* Back of Card */}
-                                    <div className={`flip-card-back absolute inset-0 ${service.bgColor} rounded-xl overflow-hidden shadow-2xl border-2 border-transparent relative flex flex-col ${isFlipped ? 'z-50' : ''}`}>
+                                    <div className={`flip-card-back h-full absolute inset-0 ${service.bgColor} rounded-xl overflow-hidden shadow-2xl border-2 border-transparent relative flex flex-col ${isFlipped ? 'z-50' : ''}`}>
                                         <div className={`absolute inset-0 opacity-5 ${service.textColor === 'text-black' ? 'bg-black' : 'bg-white'} bg-[radial-gradient(circle_at_2px_2px,currentColor_1px,transparent_0)] bg-size-[24px_24px]`}></div>
 
                                         <div className={`sticky top-0 z-10 ${service.textColor === 'text-black' ? 'bg-linear-gradient(to bottom, #00000000, #00000000) backdrop-blur-sm' : 'bg-linear-gradient(to bottom, #ffffff00, #ffffff00) backdrop-blur-sm'} pb-4 pt-6 px-6 border-b ${service.textColor === 'text-black' ? 'border-black/20' : 'border-white/20'} shrink-0`}>
@@ -98,27 +103,29 @@ const Services: React.FC = () => {
                                             </div>
                                         </div>
 
-                                        {/* Services List */}
-                                        <div className='overflow-y-auto hide-scrollbar pb-6 pt-4 px-6 flex-1 min-h-0'>
-                                            <div className='space-y-3'>
+                                        {/* Services Slider */}
+                                        <div className='flex-1 min-h-0 pb-6 pt-4 px-6 relative' onClick={(e) => e.stopPropagation()}>
+                                            <Swiper spaceBetween={30} centeredSlides={true} autoplay={{ delay: 2500, disableOnInteraction: false }} pagination={{ clickable: true }} modules={[Autoplay, Pagination, Navigation]} className="services-swiper h-full">
                                                 {service.services.map((item) => (
-                                                    <div key={item.id} className={`group relative flex items-center gap-3 p-4 rounded-xl ${service.textColor === 'text-black' ? 'bg-white/40 hover:bg-white/60' : 'bg-white/10 hover:bg-white/20'} backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-default border ${service.textColor === 'text-black' ? 'border-black/10 hover:border-black/20' : 'border-white/20 hover:border-white/30'} ml-0`}>
-                                                        {/* Icon Container */}
-                                                        <div className={`p-2.5 rounded-lg ${service.textColor === 'text-black' ? 'bg-black/10 group-hover:bg-black/20' : 'bg-white/20 group-hover:bg-white/30'} transition-all duration-300 shrink-0`}>
-                                                            <div className={`${service.textColor === 'text-black' ? 'text-black' : 'text-white'} group-hover:scale-110 transition-transform duration-300`}>
-                                                                {item.icon}
+                                                    <SwiperSlide key={item.id}>
+                                                        <div className={`flex items-center mt-2 justify-center p-4 rounded-xl ${service.textColor === 'text-black' ? 'bg-white/40 hover:bg-white/60' : 'bg-white/10 hover:bg-white/20'} backdrop-blur-sm transition-all duration-300 border ${service.textColor === 'text-black' ? 'border-black/10' : 'border-white/20'}`}>
+                                                            <div className='flex items-center gap-4 text-center w-full'>
+                                                                {/* Icon Container */}
+                                                                <div className={`p-4 rounded-xl ${service.textColor === 'text-black' ? 'bg-black/10' : 'bg-white/20'} transition-all duration-300`}>
+                                                                    <div className={`${service.textColor === 'text-black' ? 'text-black' : 'text-white'}`}>
+                                                                        {item.icon}
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                {/* Service Name */}
+                                                                <span className={`${service.textColor === 'text-black' ? 'text-gray-900' : 'text-white'} text-base font-semibold leading-tight`}>
+                                                                    {item.name}
+                                                                </span>
                                                             </div>
                                                         </div>
-                                                        
-                                                        {/* Service Name */}
-                                                        <div className='flex-1 min-w-0'>
-                                                            <span className={`${service.textColor === 'text-black' ? 'text-gray-900' : 'text-white'} text-sm font-semibold leading-tight block group-hover:translate-x-1 transition-transform duration-300`}>
-                                                                {item.name}
-                                                            </span>
-                                                        </div>
-                                                    </div>
+                                                    </SwiperSlide>
                                                 ))}
-                                            </div>
+                                            </Swiper>
                                         </div>
                                     </div>
                                 </div>
