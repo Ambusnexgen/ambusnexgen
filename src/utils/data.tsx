@@ -1,4 +1,4 @@
-import { Bot, Cloud, Code, Facebook, FileText, Instagram, Linkedin, Mail, MapPin, Palette, Phone, ShoppingCart, Smartphone, Sparkles, TrendingUp, Twitter, Video, Zap, Brain, HeadphonesIcon, Film, Camera, Briefcase, Building2, Settings, Shield, Globe } from "lucide-react"
+import { Code, Facebook, FileText, Instagram, Linkedin, Mail, Phone, ShoppingCart, Smartphone, Sparkles, TrendingUp, Twitter, Zap, Film, Camera, Briefcase, Building2, Globe } from "lucide-react"
 import missionImg from '../assets/missionImg.png'
 import VisionImg from '../assets/VisionImg.png'
 import motiveImg from '../assets/motiveImg.png'
@@ -103,34 +103,6 @@ export const servicesSection1 = [
 export const servicesSection2 = [
     {
         id: 1,
-        name: 'Logo Design & Brand Identity',
-        icon: <Sparkles className='size-6' />
-    },
-    {
-        id: 2,
-        name: 'UI/UX Design (Website & App)',
-        icon: <Palette className='size-6' />
-    },
-    {
-        id: 3,
-        name: 'Social Media Post Design',
-        icon: <FileText className='size-6' />
-    },
-    {
-        id: 4,
-        name: 'Product Packaging & 3D Mockups',
-        icon: <Palette className='size-6' />
-    },
-    {
-        id: 5,
-        name: 'Business Card, Brochure & Flyer Design',
-        icon: <FileText className='size-6' />
-    }
-]
-
-export const servicesSection3 = [
-    {
-        id: 1,
         name: 'Video Editing',
         icon: <Film className='size-6' />
     },
@@ -161,68 +133,7 @@ export const servicesSection3 = [
     }
 ]
 
-export const servicesSection4 = [
-    {
-        id: 1,
-        name: 'Digital Marketing',
-        icon: <Bot className='size-6' />
-    },
-    {
-        id: 2,
-        name: 'Social Media Management',
-        icon: <HeadphonesIcon className='size-6' />
-    },
-    {
-        id: 3,
-        name: 'SEO',
-        icon: <Globe className='size-6' />
-    },
-    {
-        id: 4,
-        name: 'Meta / Google Ads',
-        icon: <TrendingUp className='size-6' />
-    },
-    {
-        id: 5,
-        name: 'Lead Generation',
-        icon: <Zap className='size-6' />
-    },
-    {
-        id: 6,
-        name: 'Brand Building',
-        icon: <Brain className='size-6' />
-    }
-]
-
-export const servicesSection5 = [
-    {
-        id: 1,
-        name: 'Startup Consulting',
-        icon: <Film className='size-6' />
-    },
-    {
-        id: 2,
-        name: 'Business Strategy',
-        icon: <Camera className='size-6' />
-    },
-    {
-        id: 3,
-        name: 'Brand Development',
-        icon: <Video className='size-6' />
-    },
-    {
-        id: 4,
-        name: 'Pitch Deck Creation',
-        icon: <Camera className='size-6' />
-    },
-    {
-        id: 5,
-        name: 'Company Profile Creation',
-        icon: <Video className='size-6' />
-    }
-]
-
-export const servicesSection6 = [
+export const servicesSection3 = [
     {
         id: 1,
         name: 'Website/App Maintenance',
@@ -250,34 +161,6 @@ export const servicesSection6 = [
     }
 ]
 
-export const servicesSection7 = [
-    {
-        id: 1,
-        name: 'AI Chatbots',
-        icon: <Settings className='size-6' />
-    },
-    {
-        id: 2,
-        name: 'AI Tools & Automation',
-        icon: <Cloud className='size-6' />
-    },
-    {
-        id: 3,
-        name: 'Machine Learning Models',
-        icon: <Cloud className='size-6' />
-    },
-    {
-        id: 4,
-        name: 'Computer Vision (Face/Vehicle Detection)',
-        icon: <Settings className='size-6' />
-    },
-    {
-        id: 5,
-        name: 'AI Consulting',
-        icon: <Shield className='size-6' />
-    }
-]
-
 export const servicesData = [
     {
         id: 1,
@@ -288,77 +171,35 @@ export const servicesData = [
         bgColor: 'bg-yellow-400',
         textColor: 'text-black'
     },
-    // {
-    //     id: 2,
-    //     title: 'Design & Branding',
-    //     description: 'Creative designs that make your brand stand out',
-    //     services: servicesSection2,
-    //     icon: <Palette className='size-8' />,
-    //     bgColor: 'bg-red-600',
-    //     textColor: 'text-white'
-    // },
     {
-        id: 3,
+        id: 2,
         title: 'Media & Content',
         description: 'Grow your business with effective marketing strategies',
-        services: servicesSection3,
+        services: servicesSection2,
         icon: <TrendingUp className='size-8' />,
         bgColor: 'bg-gray-800',
         textColor: 'text-white'
     },
-    // {
-    //     id: 4,
-    //     title: 'Marketing & Growth',
-    //     description: 'Smart AI solutions to automate and optimize your business',
-    //     services: servicesSection4,
-    //     icon: <Bot className='size-8' />,
-    //     bgColor: 'bg-red-600',
-    //     textColor: 'text-white'
-    // },
-    // {
-    //     id: 5,
-    //     title: 'Business Consulting',
-    //     description: 'Professional video and photo production services',
-    //     services: servicesSection5,
-    //     icon: <Film className='size-8' />,
-    //     bgColor: 'bg-blue-900',
-    //     textColor: 'text-white'
-    // },
     {
-        id: 6,
+        id: 3,
         title: 'Tech Support',
         description: 'Strategic guidance to help your business succeed',
-        services: servicesSection6,
+        services: servicesSection3,
         icon: <Briefcase className='size-8' />,
         bgColor: 'bg-green-600',
         textColor: 'text-white'
     },
-    // {
-    //     id: 7,
-    //     title: 'AI & Automation',
-    //     description: 'Keep your systems running smoothly with expert support',
-    //     services: servicesSection7,
-    //     icon: <Settings className='size-8' />,
-    //     bgColor: 'bg-yellow-400',
-    //     textColor: 'text-black'
-    // }
 ]
 
 export const contactData = [
     {
         id: 1,
-        name: 'Address',
-        icon: <MapPin className='size-5 text-gray-400 cursor-pointer hover:text-white transition-colors' />,
-        value: '123 Business Street, City, State 12345'
+        name: 'Phone',
+        icon: <Phone className='size-5 text-gray-400 cursor-pointer hover:text-white transition-colors' />,
+        value: '+91 9150360528'
     },
     {
         id: 2,
-        name: 'Phone',
-        icon: <Phone className='size-5 text-gray-400 cursor-pointer hover:text-white transition-colors' />,
-        value: '+91 6381588477'
-    },
-    {
-        id: 3,
         name: 'Email',
         icon: <Mail className='size-5 text-gray-400 cursor-pointer hover:text-white transition-colors' />,
         value: 'support@ambusnexgen.com'
@@ -381,7 +222,7 @@ export const socialMediaData = [
     {
         id: 3,
         name: 'Instagram',
-        href: 'https://www.instagram.com/ambusnexgen',
+        href: 'https://www.instagram.com/ambus_nexgen',
         icon: <Instagram className='size-5 text-gray-400 cursor-pointer hover:text-white transition-colors' />
     },
     {

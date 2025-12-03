@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
                     {/* Logo and Company Name - Left Side */}
                     <div className='flex flex-col gap-4'>
                         <Link to='/' className='flex gap-x-3 items-center'>
-                            <img src={"/vite.svg"} alt='logo' className='size-10' />
+                            {/* <img src={"/vite.svg"} alt='logo' className='size-10' /> */}
                             <p className='text-2xl font-bold'>AmbusNexGen</p>
                         </Link>
                         <p className='text-gray-400 text-sm'>

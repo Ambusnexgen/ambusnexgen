@@ -48,7 +48,7 @@ const Services: React.FC = () => {
                     {servicesData.map((service) => {
                         const isFlipped = flippedCards.has(service.id)
                         return (
-                            <div key={service.id} className={`flip-card-container w-full relative h-72 cursor-pointer group ${isFlipped ? 'z-100' : 'z-10'}`} onClick={() => handleCardClick(service.id)}>
+                            <div key={service.id} id={`service-card-${service.id}`} className={`flip-card-container w-full relative h-72 cursor-pointer group ${isFlipped ? 'z-100' : 'z-10'}`} onClick={() => handleCardClick(service.id)}>
                                 <div className={`flip-card-inner relative w-full h-full ${isFlipped ? 'flipped' : ''}`}>
                                     {/* Front of Card */}
                                     <div className={`flip-card-front absolute inset-0 ${service.bgColor} rounded-xl p-8 flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-white/20`}>

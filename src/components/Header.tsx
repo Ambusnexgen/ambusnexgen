@@ -55,7 +55,7 @@ const Header: React.FC = () => {
             <div className='max-w-[1440px] mx-auto p-5'>
                 <div className='flex items-center justify-between'>
                     <Link to='/' className='flex gap-x-3 items-center cursor-pointer'>
-                        <img src={"/vite.svg"} alt='logo' className='sm:size-10 size-8' />
+                        {/* <img src={"/vite.svg"} alt='logo' className='sm:size-10 size-8' /> */}
                         <p className='sm:text-2xl text-xl font-bold'>AmbusNexGen</p>
                     </Link>
 
