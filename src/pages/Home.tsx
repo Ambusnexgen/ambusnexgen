@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 
 const Home: React.FC = () => {
     return (
-        <main>
+        <main className='bg-image'>
             <Header />
             <Hero />
             <AboutUs />

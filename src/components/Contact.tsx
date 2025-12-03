@@ -98,12 +98,12 @@ const Contact: React.FC = () => {
     }
 
     return (
-        <section id='contact-us' className='pb-20 max-w-[800px] mx-auto px-5'>
+        <section id='contact-us' className='pb-20 max-w-[1440px] mx-auto px-5 relative z-0'>
             {/* Header */}
             <div className='text-center mb-2'>
                 <div className='mb-8'>
-                    <h2 className='text-4xl md:text-5xl font-bold text-gray-900 mb-4'>Contact Us</h2>
-                    <div className='w-24 h-1 bg-black mx-auto skew-2'></div>
+                    <h2 className='text-4xl md:text-5xl font-bold text-gray-900 mb-3'>Contact Us</h2>
+                    <div className='w-24 h-1 bg-black mx-auto skew-1'></div>
                 </div>
                 <p className='text-gray-600 text-lg'>
                     Have an idea, project, or service requirement?<br />
@@ -112,7 +112,7 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Contact Form */}
-            <div className='bg-white rounded-lg shadow-md p-6 md:p-8'>
+            <div className='bg-white rounded-lg shadow-md p-6 md:p-8 max-w-[800px] mx-auto'>
                 <form onSubmit={handleSubmit} className='space-y-6'>
                     {/* Field 1: Name */}
                     <div>
@@ -212,11 +212,11 @@ const Contact: React.FC = () => {
                     {/* Submit Button */}
                     <button type='submit' disabled={isSubmitting} className='w-full px-8 py-3 cursor-pointer bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed'>
                         {isSubmitting ? (
-                            <>Sending...</>
+                            <>Submitting...</>
                         ) : (
                             <>
                                 <Send className='size-5' />
-                                Send Message
+                                Submit Enquiry
                             </>
                         )}
                     </button>

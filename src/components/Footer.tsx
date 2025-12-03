@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                     <div className='flex flex-col gap-4'>
                         <Link to='/' className='flex gap-x-3 items-center'>
                             <img src={"/vite.svg"} alt='logo' className='size-10' />
-                            <p className='text-2xl font-bold'>Ambusnexgen</p>
+                            <p className='text-2xl font-bold'>AmbusNexGen</p>
                         </Link>
                         <p className='text-gray-400 text-sm'>
                             Bridge between dreams and success - trusted by all, built for everyone.
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
                 {/* Copyright */}
                 <div className='text-center'>
                     <p className='text-gray-400 text-sm'>
-                        © {new Date().getFullYear()} Ambusnexgen. All rights reserved.
+                        © {new Date().getFullYear()} AmbusNexGen. All rights reserved.
                     </p>
                 </div>
             </div>

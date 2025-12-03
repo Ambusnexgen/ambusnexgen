@@ -4,25 +4,42 @@ import { aboutData } from '../utils/data'
 const AboutUs: React.FC = () => {
     return (
         <section id='about-us' className='py-20 max-w-[1440px] mx-auto px-5'>
-
             {/* Header Section */}
             <div className='text-center mb-8'>
-                <h2 className='text-center text-4xl font-bold text-black mb-4'>ABOUT US</h2>
-                <div className='w-24 h-1 bg-black mx-auto skew-2'></div>
+                <h2 className='text-center text-4xl font-bold text-black mb-3'>ABOUT US</h2>
+                <div className='w-24 h-1 bg-black mx-auto skew-1'></div>
             </div>
 
             {/* Description Section */}
             <p className='text-center font-semibold sm:px-20 px-2 text-gray-600 sm:text-lg'>Ambus NexGen isn’t just a company - it’s a vision of hope, growth, and transformation. We empower startups with strategy, students with skill, and companies with technology. From digital services to future-driven products, Ambus NexGen is the bridge between dreams and success - trusted by all, built for everyone.</p>
             
             {/* About Us Section */}
-            <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 sm:mt-16 mt-10'>
-                {aboutData.map((item) => (
-                    <div key={item.id} className={`flex flex-col items-center justify-center rounded-lg shadow-md p-6 ${item.bgColor}`}>
-                        <img src={item.img} alt={item.title} className='object-cover rounded-lg mb-4' />
-                        <h3 className={`text-2xl font-bold mb-2 ${item.textColor}`}>{item.title}</h3>
-                        <p className={`text-lg text-justify ${item.textColor}`}>{item.description}</p>
-                    </div>
-                ))}
+            <div className='sm:mt-16 mt-10 space-y-8'>
+                {aboutData.map((item, index) => {
+                    const isEven = index % 2 === 1;
+                    
+                    return (
+                        <div key={item.id} className={`flex flex-col sm:flex-row items-center gap-6 sm:gap-10 p-6 sm:p-8`}>
+                            {!isEven && (
+                                <div className='flex flex-col sm:flex-row items-center gap-4 sm:gap-6 sm:w-[35%]'>
+                                    <img src={item.image} alt={item.title} className='w-full max-w-[300px] h-auto object-contain' />
+                                </div>
+                            )}
+                            
+                            {/* Content */}
+                            <div className={`text-base sm:text-lg text-justify font-medium flex-1 text-gray-700 ${isEven ? 'sm:order-1' : 'sm:order-2'}`}>
+                                <h3 className={`text-2xl sm:text-3xl font-bold text-black text-center sm:text-left mb-4`}>{item.title}</h3>
+                                <p>{item.description}</p>
+                            </div>
+                            
+                            {isEven && (
+                                <div className='flex flex-col sm:flex-row items-center justify-end gap-4 sm:gap-6 sm:w-[35%] sm:order-2'>
+                                    <img src={item.image} alt={item.title} className='w-full max-w-[300px] h-auto object-contain' />
+                                </div>
+                            )}
+                        </div>
+                    );
+                })}
             </div>
         </section>
     )

@@ -1,23 +1,21 @@
-import { Bot, Cloud, Code, Facebook, FileText, Instagram, Linkedin, Mail, MapPin, Palette, Phone, ShoppingCart, Smartphone, Sparkles, TrendingUp, Twitter, Video, Zap, Brain, HeadphonesIcon, Film, Camera, Briefcase, Building2, Settings, Shield, Globe } from "lucide-react"
+import { Bot, Cloud, Code, Facebook, FileText, Instagram, Linkedin, Mail, MapPin, Palette, Phone, ShoppingCart, Smartphone, Sparkles, TrendingUp, Twitter, Video, Zap, Brain, HeadphonesIcon, Film, Camera, Briefcase, Building2, Settings, Shield, Globe, Eye, Telescope, BriefcaseBusiness } from "lucide-react"
+import missionImg from '../assets/missionImg.png'
+import VisionImg from '../assets/VisionImg.png'
+import motiveImg from '../assets/motiveImg.png'
 
 export const navData = [
     {
         id: 1,
-        name: 'Home',
-        href: '/'
-    },
-    {
-        id: 2,
         name: 'About Us',
         href: '#about-us'
     },
     {
-        id: 3,
+        id: 2,
         name: 'Our Services',
         href: '#services'
     },
     {
-        id: 4,
+        id: 3,
         name: 'Contact Us',
         href: '#contact-us'
     }
@@ -48,7 +46,7 @@ export const aboutData = [
     {
         id: 1,
         title: 'Our Mission',
-        img: 'https://placehold.co/40',
+        image: missionImg,
         description: 'Our mission is to deliver end-to-end solutions that support every level of growth - from individuals to enterprises. We bridge creativity, technology, and purpose to empower startups, educate students, uplift struggling talents, and guide companies toward success. At Ambus NexGen, we build not just services, but futures - with trust, excellence, and heart.',
         bgColor: 'bg-[#02385A]',
         textColor: 'text-white'
@@ -56,7 +54,7 @@ export const aboutData = [
     {
         id: 2,
         title: 'Our Vision',
-        img: 'https://placehold.co/40',
+        image: VisionImg,
         description: 'To create a world where every dream - from a student’s idea to a company’s vision - finds the right guidance, growth, and technology to become reality. Ambus NexGen stands as a trusted partner for innovation, opportunity, and progress - empowering people and businesses to rise beyond limits.',
         bgColor: 'bg-[#7BBDE8]',
         textColor: 'text-black'
@@ -64,7 +62,7 @@ export const aboutData = [
     {
         id: 3,
         title: 'Our Motive',
-        img: 'https://placehold.co/40',
+        image: motiveImg,
         description: 'We believe success should belong to everyone. Many have dreams but lack direction, support, or opportunity - Ambus NexGen was built for them. Our motive is to be the guide, the builder, and the strength for those who strive for a better tomorrow. We stand for trust, growth, and togetherness - a family that lifts everyone.',
         bgColor: 'bg-[#02B4D8]',
         textColor: 'text-black'
@@ -287,15 +285,15 @@ export const servicesData = [
         bgColor: 'bg-yellow-400',
         textColor: 'text-black'
     },
-    {
-        id: 2,
-        title: 'Design & Branding',
-        description: 'Creative designs that make your brand stand out',
-        services: servicesSection2,
-        icon: <Palette className='size-8' />,
-        bgColor: 'bg-red-600',
-        textColor: 'text-white'
-    },
+    // {
+    //     id: 2,
+    //     title: 'Design & Branding',
+    //     description: 'Creative designs that make your brand stand out',
+    //     services: servicesSection2,
+    //     icon: <Palette className='size-8' />,
+    //     bgColor: 'bg-red-600',
+    //     textColor: 'text-white'
+    // },
     {
         id: 3,
         title: 'Media & Content',
@@ -305,24 +303,24 @@ export const servicesData = [
         bgColor: 'bg-gray-800',
         textColor: 'text-white'
     },
-    {
-        id: 4,
-        title: 'Marketing & Growth',
-        description: 'Smart AI solutions to automate and optimize your business',
-        services: servicesSection4,
-        icon: <Bot className='size-8' />,
-        bgColor: 'bg-red-600',
-        textColor: 'text-white'
-    },
-    {
-        id: 5,
-        title: 'Business Consulting',
-        description: 'Professional video and photo production services',
-        services: servicesSection5,
-        icon: <Film className='size-8' />,
-        bgColor: 'bg-blue-900',
-        textColor: 'text-white'
-    },
+    // {
+    //     id: 4,
+    //     title: 'Marketing & Growth',
+    //     description: 'Smart AI solutions to automate and optimize your business',
+    //     services: servicesSection4,
+    //     icon: <Bot className='size-8' />,
+    //     bgColor: 'bg-red-600',
+    //     textColor: 'text-white'
+    // },
+    // {
+    //     id: 5,
+    //     title: 'Business Consulting',
+    //     description: 'Professional video and photo production services',
+    //     services: servicesSection5,
+    //     icon: <Film className='size-8' />,
+    //     bgColor: 'bg-blue-900',
+    //     textColor: 'text-white'
+    // },
     {
         id: 6,
         title: 'Tech Support',
@@ -332,15 +330,15 @@ export const servicesData = [
         bgColor: 'bg-green-600',
         textColor: 'text-white'
     },
-    {
-        id: 7,
-        title: 'AI & Automation',
-        description: 'Keep your systems running smoothly with expert support',
-        services: servicesSection7,
-        icon: <Settings className='size-8' />,
-        bgColor: 'bg-yellow-400',
-        textColor: 'text-black'
-    }
+    // {
+    //     id: 7,
+    //     title: 'AI & Automation',
+    //     description: 'Keep your systems running smoothly with expert support',
+    //     services: servicesSection7,
+    //     icon: <Settings className='size-8' />,
+    //     bgColor: 'bg-yellow-400',
+    //     textColor: 'text-black'
+    // }
 ]
 
 export const contactData = [
