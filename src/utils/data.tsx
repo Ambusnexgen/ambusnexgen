@@ -1,4 +1,4 @@
-import { Bot, Cloud, Code, Facebook, FileText, Instagram, Linkedin, Mail, MapPin, Palette, Phone, ShoppingCart, Smartphone, Sparkles, TrendingUp, Twitter, Video, Zap, Brain, HeadphonesIcon, Film, Camera, Briefcase, Building2, Settings, Shield, Globe, Eye, Telescope, BriefcaseBusiness } from "lucide-react"
+import { Bot, Cloud, Code, Facebook, FileText, Instagram, Linkedin, Mail, MapPin, Palette, Phone, ShoppingCart, Smartphone, Sparkles, TrendingUp, Twitter, Video, Zap, Brain, HeadphonesIcon, Film, Camera, Briefcase, Building2, Settings, Shield, Globe } from "lucide-react"
 import missionImg from '../assets/missionImg.png'
 import VisionImg from '../assets/VisionImg.png'
 import motiveImg from '../assets/motiveImg.png'
