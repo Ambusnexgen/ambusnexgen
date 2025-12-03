@@ -2,6 +2,9 @@ import { Bot, Cloud, Code, Facebook, FileText, Instagram, Linkedin, Mail, MapPin
 import missionImg from '../assets/missionImg.png'
 import VisionImg from '../assets/VisionImg.png'
 import motiveImg from '../assets/motiveImg.png'
+import hero1Img from '../assets/hero1.png'
+import hero2Img from '../assets/hero2.png'
+import hero3Img from '../assets/hero3.png'
 
 export const navData = [
     {
@@ -24,21 +27,21 @@ export const navData = [
 export const heroData = [
     {
         id: 1,
-        img: '/images/hero/1.jpg',
-        link: 'collection/1',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.'
+        img: hero1Img,
+        title: 'IT & Development',
+        description: 'Complete digital solutions from websites to mobile apps'
     },
     {
         id: 2,
-        img: '/images/hero/2.jpg',
-        link: 'collection/2',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.'
+        img: hero2Img,
+        title: 'Media & Content',
+        description: 'Grow your business with effective marketing strategies'
     },
     {
         id: 3,
-        img: '/images/hero/3.jpg',
-        link: 'collection/3',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.'
+        img: hero3Img,
+        title: 'Tech Support',
+        description: 'Strategic guidance to help your business succeed'
     }
 ]
 

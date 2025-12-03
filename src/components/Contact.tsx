@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
     }
 
     return (
-        <section id='contact-us' className='pb-20 max-w-[1440px] mx-auto px-5 relative z-0'>
+        <section id='contact-us' className='sm:pb-20 pb-10 max-w-[1440px] mx-auto px-5 relative z-0'>
             {/* Header */}
             <div className='text-center mb-2'>
                 <div className='mb-8'>

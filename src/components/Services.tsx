@@ -25,7 +25,7 @@ const Services: React.FC = () => {
     }
 
     return (
-        <section id='services' className='pb-20 px-5 mx-auto max-w-[1440px] flex flex-col items-center justify-center relative'>
+        <section id='services' className='sm:pb-20 pb-10 px-5 mx-auto max-w-[1440px] flex flex-col items-center justify-center relative'>
             {/* Header Section */}
             <div className='text-center mb-16'>
                 {/* Title */}
@@ -42,7 +42,7 @@ const Services: React.FC = () => {
             </div>
             
             {/* Services Content */}
-            <div className='flex flex-col lg:flex-row justify-between w-full sm:w-[80%] gap-8 items-center'>
+            <div className='flex flex-col lg:flex-row justify-between w-full sm:w-[80%] sm:gap-8 items-center'>
                 {/* Service Cards */}
                 <div className='flex flex-col gap-5 sm:gap-10 flex-1 max-w-[500px] w-full relative'>
                     {servicesData.map((service) => {
