@@ -5,17 +5,23 @@ import AboutUs from '../components/AboutUs'
 import Services from '../components/Services'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import SEO from '../components/SEO'
+import StructuredData from '../components/StructuredData'
 
 const Home: React.FC = () => {
     return (
-        <main className='bg-image'>
-            <Header />
-            <Hero />
-            <AboutUs />
-            <Services />
-            <Contact />
-            <Footer />
-        </main>
+        <>
+            <SEO />
+            <StructuredData />
+            <main className='bg-image'>
+                <Header />
+                <Hero />
+                <AboutUs />
+                <Services />
+                <Contact />
+                <Footer />
+            </main>
+        </>
     )
 }
 
