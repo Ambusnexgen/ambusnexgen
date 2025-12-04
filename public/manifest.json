@@ -1,0 +1,16 @@
+{
+    "name": "AmbusNexGen",
+    "short_name": "AmbusNexGen",
+    "description": "Complete digital solutions: IT Development, Media & Content, Tech Support",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#02385A",
+    "background_color": "#ffffff",
+    "icons": [
+        {
+            "src": "/vite.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}
